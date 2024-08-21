@@ -37,7 +37,6 @@ for i in range(1, 4001):
         "xp": random.randint(1000, 100000),
         "join_date": (datetime.date.today() - datetime.timedelta(days=random.randint(365, 1095))).isoformat()
     }
-    ndjson_data.append({ "index": {"_index": "players-index-2024-13"}})
     ndjson_data.append(player)
 
 output_file = 'C:\\Users\\Alex\\Downloads\\players-index-2024-13.ndjson'
